@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Posting page</title>
+</head>
+<body>
+	<form action="join" method="post">
+	<table width="200">
+		<tr bgcolor="#aaaaaa" height="50">
+		<td colspan="2" style="text-align:center">
+			<b>Step1 : 아이디/비번 입력</b><br>
+		<td>
+		</tr>
+		<tr>
+		<td style="text-align:right">
+			아이디:<br>
+			비밀번호:<br>
+			비밀번호 확인:<br>
+		</td>
+		<td>
+			<input type="text" name="id"><br>
+			<input type="password" name="pw"><br>
+			<input type="password" name=pwCheck><br>
+		</td>
+		</tr>
+		<tr bgcolor="#aaaaaa" height="50">
+		<td colspan="2" style="text-align:center">
+			<b>Step2 : 개인정보</b><br>
+		</td>
+		</tr>
+		<tr>
+		<td style="text-align:right">
+			성별:<br>
+			혈액형:<br>
+			생일:<br>
+		</td>
+		<td>
+			<input type="radio" name="gender" value="남자">남
+			<input type="radio" name="gender" value="여자">여
+			<br>
+			<select name="bloodtype">
+				<option value="AB">AB형
+				<option value="A">A형
+				<option value="B">B형
+				<option value="O">O형
+			</select><br>
+			<input type="date" name="birth"><br>
+		</td>
+		</tr>
+		<tr bgcolor="#aaaaaa" height="50">
+		<td colspan="2" style="text-align:center">
+			<b>Step3 : 선호도</b><br>
+		</td>
+		</tr>
+		<tr>
+		<td style="text-align:right">
+			취미:<br>
+			좋아하는 색깔:<br>
+		</td>
+		<td>
+			<input type="checkbox" name="hobby" value="축구">축구
+			<input type="checkbox" name="hobby" value="야구">야구
+			<input type="checkbox" name="hobby" value="농구">농구
+			<br>
+			<input type="color" name="color"><br>
+		</td>
+		</tr>
+		<tr bgcolor="#aaaaaa" height="50">
+		<td colspan="2" style="text-align:center">
+			<b>Step4 : 적고 싶은 말</b><br>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="2">
+			<textarea name="comment" rows="3" cols="50"></textarea>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="2" style="text-align:center">
+			<input type="submit" value="제출">
+			<input type="reset" value="초기화">
+		</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
